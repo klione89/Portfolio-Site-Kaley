@@ -2,8 +2,13 @@
 <html lang="en" dir="ltr">
 
   <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kaley's Portfolio</title>
   </head>
 
@@ -11,7 +16,10 @@
 
     <header>
       <div>
-        <img src="/Users/kaleylione/Desktop/School/Frontend Development/Portfolio Site Kaley Lione/img/Personal Logo/Name Logo@2x.png" alt="Kaley Lione" >
+        <picture>
+          <source srcset="img/Personal Logo/Name Logo@1x.png" media="(max-width:767px)">
+          <img src="img/Personal Logo/Name Logo@2x.png" alt="Kaley Lione" >
+        </picture>
         <nav>
           <ul>
            <li><a href="index.html">Work</a></li>
@@ -22,7 +30,7 @@
       </div>
     </header>
 
-    <div>
+    <div id="intro">
       <div>
         <h1>Kaley's UX/UI Portfolio</h1>
         <br><span>Hello my name is Kaley Lione and I am a UI/UX designer with a focus on design and frontend development.</span>
@@ -30,50 +38,44 @@
       </div>
     </div>
 
-    <div><!-- open row that holds (2) columns for project -->
-      <div><!-- open first column (used for image) -->
-        <picture>
-          <source srcset="/Users/kaleylione/Desktop/School/Frontend Development/Portfolio Site Kaley Lione/img/USurf UX/Home Page Images/USurf UI@1x.png" media="(max-width:767px)">
-          <img src="/Users/kaleylione/Desktop/School/Frontend Development/Portfolio Site Kaley Lione/img/USurf UX/Home Page Images/USurf UI@2x.png" alt="USurf Logo">
-        </picture>
-      </div><!-- end first column -->
-      <div><!-- open second column (used for text) -->
-        <h3>Usurf UI</h3><!-- heading for the project -->
-        <p><!-- open paragraph -->
-          A surfing app that provides beautifully displayed and easy to understand wind, wave and weather reports, forecasts and statistics for surfers.
-        </p><!-- end paragraph -->
-        <p><!-- open paragraph -->
-          This case study shows the design language, visual elements and interactive properties created for the USurf app.
-        </p><!-- end paragraph -->
-        <a href="#Work">Read more</a><!-- button or link label -->
-      </div><!-- end second column -->
-    </div><!-- end row that holds (2) columns for project --></div>
+    <div id="projects"> <!-- Project Open -->
+      <div id="projects-1"> <!-- Project 1 Open -->
+        <div>
+          <picture>
+            <source srcset="/Users/kaleylione/Desktop/School/Frontend Development/Portfolio Site Kaley Lione/img/USurf UX/Home Page Images/USurf UI@1x.png" media="(max-width:767px)">
+            <img src="/Users/kaleylione/Desktop/School/Frontend Development/Portfolio Site Kaley Lione/img/USurf UX/Home Page Images/USurf UI@2x.png" alt="USurf Logo">
+          </picture>
+        </div>
+        <div>
+          <h3>Usurf UI</h3><!-- heading for the project -->
+          <p>A surfing app that provides beautifully displayed and easy to understand wind, wave and weather reports, forecasts and statistics for surfers.</p>
+          <p>This case study shows the design language, visual elements and interactive properties created for the USurf app.</p>
+          <a href="#Work" class="button">Read more</a>
+        </div>
+      </div> <!-- Project 1 Close -->
 
-    <div><!-- open row that holds (2) columns for project -->
-      <div><!-- open first column (used for image) -->
-        <picture>
-          <source srcset="/Users/kaleylione/Desktop/School/Frontend Development/Portfolio Site Kaley Lione/img/USurf UX/Home Page Images/USurf UX@1x.png" media="(max-width:767px)">
-          <img src="/Users/kaleylione/Desktop/School/Frontend Development/Portfolio Site Kaley Lione/img/USurf UX/Home Page Images/Usurf UX@2x.png" alt="USurf Logo">
-        </picture>
-      </div><!-- end first column -->
-      <div><!-- open second column (used for text) -->
-        <h3>USurf UX</h3><!-- heading for the project -->
-        <p><!-- open paragraph -->
-          A surfing app that provides beautifully displayed and easy to understand wind, wave and weather reports, forecasts and statistics for surfers.
-        </p><!-- end paragraph -->
-        <p><!-- open paragraph -->
-          This was a full design projects where I started at research and ended by presenting a full clickable prototype.
-        </p><!-- end paragraph -->
-        <a href="usurfux.html">Read more</a><!-- button or link label -->
-      </div><!-- end second column -->
-    </div><!-- end row that holds (2) columns for project --></div>
+      <div id="project-2"><!-- Project 2 Open -->
+        <div>
+          <picture>
+            <source srcset="/Users/kaleylione/Desktop/School/Frontend Development/Portfolio Site Kaley Lione/img/USurf UX/Home Page Images/USurf UX@1x.png" media="(max-width:767px)">
+            <img src="/Users/kaleylione/Desktop/School/Frontend Development/Portfolio Site Kaley Lione/img/USurf UX/Home Page Images/Usurf UX@2x.png" alt="USurf Logo">
+          </picture>
+        </div>
+        <div>
+          <h3>USurf UX</h3>
+          <p> A surfing app that provides beautifully displayed and easy to understand wind, wave and weather reports, forecasts and statistics for surfers.  </p><!-- end paragraph -->
+          <p>This was a full design projects where I started at research and ended by presenting a full clickable prototype.</p>
+          <a href="usurfux.html" class="button">Read more</a>
+        </div>
+      </div><!-- Project 2 Close -->
+    </div> <!-- Project Close -->
 
     <footer id="contact">
       <div>
         <h2>Get in Touch</h2>
         <p> Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+9515515077">951-551-5077</a>. Prefer sending an email?</p>
         <div>
-          <a href="mailto:klione89@gmail.com">Email me</a>
+          <a href="mailto:klione89@gmail.com" class="button contact">Email me</a>
         </div>
       <div>
     <!--Social Media Layout and Placeholders-->
