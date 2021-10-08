@@ -4,17 +4,48 @@ Colors used:
 Background Color (Dark Brown): #5D5C61
 Primary Color (Blue): #557A95;
 Secondary Color (Baige): #B1A296;
-Accent Colors (Light Blue) #7395AE and (Grey_ #379683
+Accent Colors (Light Blue) #7395AE and (Grey) #379683
 Font Color (White) #FFFFFF
 */
 
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #3C403D;
+  padding: 0 0.65em;
+  text-align: center;
+  -webkit-box-shadow:0px 5px 8px 0px rgba(50, 50, 50, 0.55);
+  -moz-box-shadow:0px 5px 8px 0px rgba(50, 50, 50, 0.55);
+  box-shadow:0px 5px 8px 0px rgba(50, 50, 50, 0.55);
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 320px;
+}
+
 body {
-  background-color: #5d5c61;
+  background-color: #DADED4;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  color: #FFFFFF
+  color: #000000
+}
+
+footer {
+  background-color: #3C403D;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 0.85em;
 }
 
 h1, h2, h3, h4 {
@@ -46,33 +77,75 @@ img {
 }
 
 a {
-  color: #7395AE;
+  color: #A3BCB6;
   text-decoration: none;
 }
-
 a:visited { /* visited link */
-  color: #7395AE;
+  color: #39603D;
 }
-
 a:hover {
-  color: #557A95;
+  color: #39603D;
   text-decoration: underline;
 }
-
 a:focus {
-  color: #557A95;
+  color: #39603D;
   text-decoration: underline;
 }
-
 a:active { /* selected link */
-  color: #557A95;
+  color: #39603D;
+}
+
+nav > ul{
+  list-style-type: none;
+  padding: 0
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF
+}
+
+nav > ul > li > a:visited{
+  color: #FFFFFF;
+}
+nav > ul > li > a:hover{
+  color: #FFFFFF;
+}
+nav > ul > li > a:focus{
+  color: #FFFFFF;
+}
+nav > ul > li > a:active{
+  color: #FFFFFF;
+}
+
+.title{
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.resume{
+  display: inline-block;
+  background-color: #A3BCB6;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #000000;
+  transition: 0.2s opacity;
 }
 
 .button {
   display: inline-block;
-  background-color: #FFFFFF;
+  background-color: #A3BCB6;
   color: #FFFFFF;
-  font-weight :500;
+  font-weight: 500;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #000000;
@@ -95,6 +168,7 @@ a:active { /* selected link */
   color: #FFFFFF;
   font-weight :500;
   padding: 10px;
+  margin-bottom: 20px;
   border-radius: 3px;
   border-bottom: 2px solid #000000;
   transition: 0.2s opacity;
@@ -108,4 +182,115 @@ a:active { /* selected link */
 .button.contact:active{
   opacity: 0.8;
   text-decoration: none;
+}
+
+.container{
+  padding: 0 15px
+}
+
+.logo{
+  max-width: 250px;
+}
+
+#projects-1{
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border: 3px solid #3C403D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#project-2{
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border: 3px solid #3C403D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#bio{
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border: 3px solid #3C403D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#download{
+  display: inline-block;
+  background-color: #A3BCB6;
+  color: #000000;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #000000;
+  transition: 0.2s opacity;
+}
+
+#skill{
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border: 3px solid #3C403D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#tool{
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border: 3px solid #3C403D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#summary{
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border: 3px solid #3C403D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#process{
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border: 3px solid #3C403D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#prototype{
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border: 3px solid #3C403D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+#intro {
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border: 3px solid #3C403D;
 }
