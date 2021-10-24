@@ -25,7 +25,7 @@ header {
 }
 
 main {
-  padding-top: 320px;
+  padding-top: 160px;
 }
 
 body {
@@ -46,6 +46,8 @@ footer {
   color: #FFFFFF;
   width: 100%;
   padding: 0.85em;
+  text-align: center;
+
 }
 
 h1, h2, h3, h4 {
@@ -130,6 +132,10 @@ nav > ul > li > a:active{
   text-align: center;
 }
 
+.row{
+  overflow: auto;
+}
+
 .resume{
   display: inline-block;
   background-color: #A3BCB6;
@@ -189,7 +195,19 @@ nav > ul > li > a:active{
 }
 
 .logo{
-  max-width: 250px;
+  max-width: 100px;
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 #projects-1{
@@ -203,6 +221,16 @@ nav > ul > li > a:active{
 }
 
 #project-2{
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border: 3px solid #3C403D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#projects-3{
   background-color: #FFFFFF;
   padding: 20px;
   display: inline-block;
@@ -236,18 +264,18 @@ nav > ul > li > a:active{
 #skill{
   background-color: #FFFFFF;
   padding: 20px;
-  display: inline-block;
-  width: 100%;
+  display:inline-block;
   border: 3px solid #3C403D;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 90px;
 }
 
 #tool{
   background-color: #FFFFFF;
   padding: 20px;
-  display: inline-block;
-  width: 100%;
+  padding-bottom: 75px;
+  display:inline-block;
   border: 3px solid #3C403D;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -306,7 +334,7 @@ nav > ul > li > a:active{
   margin-top: 4px;
   }
   main{
-  padding-top: 210px;
+  padding-top: 120px;
   }
   body{
   font-size: 18px;
@@ -315,7 +343,7 @@ nav > ul > li > a:active{
   text-align: center;
   }
   .col-md-6{
-  width: 50%;
+  width: 45%;
   }
   .row::after {
   content: "";
@@ -336,7 +364,7 @@ nav > ul > li > a:active{
     margin-top: 4px;
   }
   main{
-    padding-top: 210px;
+    padding-top: 110px;
   }
   body{
     font-size: 18px;
@@ -364,4 +392,19 @@ nav > ul > li > a:active{
 
 [class*="col-"]{
   float: left;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
 }
