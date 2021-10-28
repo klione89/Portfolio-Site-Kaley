@@ -15,8 +15,7 @@ Font Color (White) #FFFFFF
 
 header {
   background-color: #3C403D;
-  padding: 0 0.65em;
-  text-align: center;
+  padding: 10px 0 4px;
   -webkit-box-shadow:0px 5px 8px 0px rgba(50, 50, 50, 0.55);
   -moz-box-shadow:0px 5px 8px 0px rgba(50, 50, 50, 0.55);
   box-shadow:0px 5px 8px 0px rgba(50, 50, 50, 0.55);
@@ -25,7 +24,7 @@ header {
 }
 
 main {
-  padding-top: 160px;
+  padding-top: 90px;
 }
 
 body {
@@ -99,11 +98,8 @@ a:active { /* selected link */
 
 nav > ul{
   list-style-type: none;
-  padding: 0
-}
-
-nav > ul > li {
-  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -124,6 +120,40 @@ nav > ul > li > a:focus{
 }
 nav > ul > li > a:active{
   color: #FFFFFF;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 10px;
+  font-size: 30px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 .title{
@@ -333,6 +363,12 @@ nav > ul > li > a:active{
   float: right;
   margin-top: 4px;
   }
+  nav > ul {
+  margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
   main{
   padding-top: 120px;
   }
@@ -341,6 +377,12 @@ nav > ul > li > a:active{
   }
   #intro{
   text-align: center;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+  .navtoggle li:last-child {
+  display: none;
   }
   .col-md-6{
   width: 45%;
